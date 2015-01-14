@@ -1,0 +1,74 @@
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    Neeasade.net
+  </title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <!-- CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/public/css/main.css">
+</head>
+<body>
+<div class="header terminal">
+
+<a href="/">
+<!-- weird spacing is due to center text align being applied -->
+<pre class="header-title" >
+ _   _                               _
+     | \ | | ___  ___  __ _ ___  __ _  __| | ___
+      |  \| |/ _ \/ _ \/ _` / __|/ _` |/ _` |/ _ \
+      | |\  |  __/  __/ (_| \__ \ (_| | (_| |  __/
+      |_| \_|\___|\___|\__,_|___/\__,_|\__,_|\___|
+</pre>
+</a>
+
+<div class="header_links">
+    <a href="#about" onclick="toggle('#about')">About</a>
+    <a href="#contact" onclick="toggle('#contact')">Contact</a>
+    <a href="http://blog.neeasade.net">Blog</a>
+    <a href="http://git.neeasade.net">Git</a>
+    <a href="#really" onclick="toggle('#really')">Porn</a>
+</div>
+
+</div>
+
+<div id="about" class="terminal">
+ABOUT
+</div>
+
+<div id="contact" class="terminal">
+contact
+</div>
+
+<div id="really" class="terminal">
+<pre>
+               ._ o o
+               \_`-)|_
+            ,""       \
+          ,"  ## |   ಠ ಠ.
+        ," ##   ,-\__    `.
+      ,"       /     `--._;)
+    ,"     ## /           U
+  ,"   ##    /
+</pre>
+</div>
+
+    <script type='text/javascript'>
+        function toggle(el)
+        {
+          if($(el).is(':visible'))
+          {
+             $(el).fadeOut(300);
+          } else {
+             $(el).fadeIn(300);
+          }
+        }
+    </script>
+</body>
+
