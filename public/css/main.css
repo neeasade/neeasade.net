@@ -32,14 +32,25 @@ a:hover
     margin-right:auto;
     background-color:#292929;
     color: #a2a2a2;
-    border: 5px solid #ffffff;
 
     padding:3px;
 
     /*gaps ;) */
     margin-top: 8px;
     margin-bottom:8px;
+
+    /* Transparent border */
+    border: 5px solid rgba(24,24,24,0.5);
+    -moz-background-clip: padding;     /* Firefox 3.6 */
+    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
 }
+
+.terminal:hover
+{
+    border: 5px solid rgba(216,216,216,0.5);
+}
+
 
 .border_focused
 {
@@ -58,14 +69,14 @@ a:hover
 
 body
 {
-    background-image:url('/public/background/background.png');
+    background-image:url('../background/background.png');
     background-repeat:repeat;
     background-attachment:fixed;
 }
 
 .header-title
 {
-    font:bold;
+    font-family:'Dejavu Sans Mono';
     font-size:8pt;
     margin: 0px;
     padding:0;
