@@ -8,7 +8,7 @@
     Neeasade.net
   </title>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="public/js/jquery.min.js"></script>
 
   <!-- CSS -->
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
@@ -16,24 +16,15 @@
   <link rel="stylesheet" href="public/css/main.css">
 </head>
 <body>
-<div class="header terminal">
+<div class="header panel">
 
-<a href="/">
-<!-- weird spacing is due to center text align being applied -->
-<pre class="header-title" >
- _   _                               _
-     | \ | | ___  ___  __ _ ___  __ _  __| | ___
-      |  \| |/ _ \/ _ \/ _` / __|/ _` |/ _` |/ _ \
-      | |\  |  __/  __/ (_| \__ \ (_| | (_| |  __/
-      |_| \_|\___|\___|\__,_|___/\__,_|\__,_|\___|
-</pre>
-</a>
-
-<div class="header_links">
+<div class="header-links">
+  <b>
     <a href="#about" onclick="toggle('#about')">About</a>
     <a href="#contact" onclick="toggle('#contact')">Contact</a>
     <a href="http://blog.neeasade.net">Blog</a>
     <a href="http://git.neeasade.net">Git</a>
+  </b>
 </div>
 
 </div>
@@ -55,13 +46,11 @@ GCS d-()@> s:+> a-- C++>+++ UBL++>$ P+>++ L+++>++++>$
 </div>
 
 <div id="contact" class="terminal"  style="display: none">
-Email: neeasade [at] cock [dot] li <br/>
-irc (neeasade): irc.freenode.net <br/>
-
-Internet profiles:
-<a href="https://twitter.com/neeasade"> Twitter </a> -
-<a href="https://reddit.com/u/mr_asdf"> Reddit </a> -
-<a href="https://github.com/neeasade"> Github </a>
+<a href="mailto:neeasade[at]cock[dot]li">neeasade[at]cock[dot]li<a><br>
+<a href="https://www.rizon.net">neeasade@Rizon<a><br>
+<a href="https://twitter.com/neeasade"> Twitter </a><br>
+<a href="https://reddit.com/u/mr_asdf"> Reddit </a><br>
+<a href="https://github.com/neeasade"> Github </a><br>
 </div>
     <script type='text/javascript'>
         function toggle(el)

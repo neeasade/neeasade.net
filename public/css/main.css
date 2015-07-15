@@ -18,29 +18,54 @@ a:hover
 }
 
 
-*
+.panel
 {
-    font-family:Droid Sans Mono
+    width: 440px;
+    height: 32px;
+    box-shadow: 3px 3px 1px rgba(0,0,0,0.6);
+    font-family:Droid Sans;
+    font-size: 12px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 3px;
+    margin-bottom: -3px;
+    background-color:#1e1e1e;
+    color: #a7a7a7;
+    padding: 3px;
+}
+
+.header-links
+{
+    margin-top:9px;
+}
+
+.header-links a
+{
+    color: #a7a7a7;
+    text-align: center;
+    background-color: #323537;
+    padding: 8px;
 }
 
 .terminal
 {
     width: 400px;
     box-shadow: 3px 3px 1px rgba(0,0,0,0.6);
+    font-family:Droid Sans Mono;
     align: center;
     margin-left:auto;
     margin-right:auto;
-    background-color:#292929;
-    color: #a2a2a2;
+    background-color:#1e1e1e;
+    color: #a7a7a7;
 
-    padding:3px;
+    padding:14px;
 
     /*gaps ;) */
-    margin-top: 8px;
-    margin-bottom:8px;
+    margin-top: 14px;
+    margin-bottom: 14px;
 
     /* Transparent border */
-    border: 5px solid rgba(24,24,24,0.5);
+    border: 5px solid rgba(46,46,46,0.5);
     -moz-background-clip: padding;     /* Firefox 3.6 */
     -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
     background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
@@ -54,23 +79,18 @@ a:hover
 
 .border_focused
 {
-    border: 5px solid #ffffff;
-}
-
-.header-links
-{
-    text-align:center;
+    border: 5px solid #5f5a60;
 }
 
 .header-link
 {
-  font-size: 11pt;
+  font-size: 16pt;
 }
 
 body
 {
     background-image:url('../background/background.png');
-    background-repeat:repeat;
+    background-size: cover;
     background-attachment:fixed;
 }
 
