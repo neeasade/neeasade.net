@@ -49,12 +49,12 @@ a:hover
     background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
     overflow: hidden;
 }
-
 .workspace
 {
     margin: 0 auto;
     height: 600px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     padding-right:66px; /* there was a weird spacing issue. */
 }
 .container-left
@@ -96,6 +96,11 @@ a:hover
   font-size: 16pt;
 }
 
+pre
+{
+  margin:0px;
+}
+
 body
 {
     margin: 0;
@@ -118,4 +123,54 @@ li
     font-size: 12px;
     list-style-type:none;
 }
+
+/* for tweets */
+img
+{
+  display:none;
+}
+
+span[data-scribe="element:name"]
+{
+  display:none;
+}
+
+span[data-scribe="element:screen_name"]::after
+{
+  content: ">\00a0";
+}
+
+span[data-scribe="element:screen_name"]::before
+{
+  content: "<";
+}
+
+.tweet
+{
+  margin:0px;
+}
+
+#tweets ul
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+#tweets > ul > li
+{
+  display:inline;
+}
+
+#tweets > ul > li > div
+{
+  display:block;
+  float:left;
+}
+
+#tweets > ul > p
+{
+  margin: 0px;
+  padding: 0px;
+}
+
 
