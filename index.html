@@ -8,60 +8,89 @@
     Neeasade.net
   </title>
 
-  <script src="public/js/jquery.min.js"></script>
-
-  <!-- CSS -->
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="public/css/main.css">
 </head>
+
 <body>
-<div class="header panel">
+  <div class="outer"><div class="middle"><div class="workspace">
 
-<div class="header-links">
-  <b>
-    <a href="#about" onclick="toggle('#about')">About</a>
-    <a href="#contact" onclick="toggle('#contact')">Contact</a>
-    <a href="http://blog.neeasade.net">Blog</a>
-    <a href="http://git.neeasade.net">Git</a>
-  </b>
+  <div class="container-left">
+    <div class="terminal" style:"overflow:hidden;">
+      <pre style="font-size:10px;display:inline-block;float:left;" align="left">
+              +
+              #
+             ###
+            #####
+            ######
+           ; #####;
+          +##.#####
+         +##########
+        #############;
+       ###############+
+      #######   #######
+    .######;     ;###;`".
+   .#######;     ;#####.
+   #########.   .########`
+  ######'           '######
+ ;####                 ####;
+ ##'                     '##
+#'                         `#
+      </pre>
+      <h3> Hi, I'm Neeasade. </h3>
+      <p> I program on occasion, and enjoy C#, Python, and C. Progressive Trance and Chiptune are awesome. I like to spam the internet sometimes and generally consider myself a pretty dorky person.</p>
+    </div>
+
+    <div class="terminal">
+      Cool people on the internet:<hr/>
+      <table>
+        <tr>
+          <td>
+            <ul>
+            <li><a href="http://mort.coffee">mort</a><br>
+            <li><a href="http://elliottpardee.me">vypr</a>
+            <li><a href="http://greduan.com">greduan</a><br>
+            <li><a href="http://venam.nixers.net">venam</a><br>
+            <li><a href="http://xero.nu">xero</a><br>
+            <li><a href="http://adamkessler.me/">adam</a><br>
+            <li><a href="http://z3bra.org/">z3bra</a><br>
+            <li><a href="http://http://internaught.io/">yuppie</a><br>
+            </ul>
+          </td>
+          <td>
+            <ul>
+            <li><a href="http://hub.quad.moe/">quad</a>
+            <li><a href="https://schisma.co/">schisma</a>
+            <li><a href="http://nilsding.org/">nilsding</a>
+            <li><a href="http://the.howl.moe/">howl</a>
+            <li><a href="http://driedonionsoup.com/">jcsh</a>
+            <li><a href="http://spoonm.org/">spoonm</a>
+            <li><a href="http://anshin.co/">anshin</a>
+            <li><a href="https://danielfgray.github.io/">danthebeastman</a>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      Geek code(v3.1):
+      <hr/>
+      <code>
+GCS d-()@> s:+> a-- C++>+++ UBL++>$ P+>++ L+++>++++>$ !E W++ !N o? K? !w(+) !O !M !V PS@ !PE !Y PGP++ !t !5 !X R !tv b DI+ D+ G e+>++ h r y+
+      </code>
+    </div>
+
+  </div><div class="container-right">
+
+    <div class="terminal">
+      YEAH
+    </div>
+
+    <div class="terminal">
+      YEAH
+    </div>
+  </div>
+
+  </div></div></div>
 </div>
 
-</div>
-
-<div id="about" class="terminal" style="display: none">
-
-Hi there. I'm a full time CS student interested in linux and unix-like operating systems.
-
-I like to spam the internet sometimes and generally consider myself a pretty dorky person.
-
-<p>
------BEGIN GEEK CODE BLOCK-----<br/>
-Version: 3.1<br/>
-GCS d-()@> s:+> a-- C++>+++ UBL++>$ P+>++ L+++>++++>$
-!E W++ !N o? K? !w(+) !O !M !V PS@ !PE !Y PGP++ !t !5
-!X R !tv b DI+ D+ G e+>++ h r y+ <br />
-------END GEEK CODE BLOCK------
-</p>
-</div>
-
-<div id="contact" class="terminal"  style="display: none">
-<a href="mailto:neeasade[at]cock[dot]li">neeasade[at]cock[dot]li<a><br>
-<a href="https://www.rizon.net">neeasade@Rizon<a><br>
-<a href="https://twitter.com/neeasade"> Twitter </a><br>
-<a href="https://reddit.com/u/mr_asdf"> Reddit </a><br>
-<a href="https://github.com/neeasade"> Github </a><br>
-</div>
-    <script type='text/javascript'>
-        function toggle(el)
-        {
-          if($(el).is(':visible'))
-          {
-             $(el).fadeOut(300);
-          } else {
-             $(el).fadeIn(300);
-          }
-        }
-    </script>
-</body>
 
