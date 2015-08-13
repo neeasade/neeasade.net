@@ -1,44 +1,31 @@
 
-.header
-{
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
-}
-
 a
 {
-    color:#dddddd;
+    color:#c8b55b;
     text-decoration:none;
 }
 
 a:hover
 {
-    color:#ffffff;
+    color:#e4dc8c;
 }
 
-.header-links
+pre span
 {
-    margin-top:9px;
-}
-
-.header-links a
-{
-    color: #a7a7a7;
-    text-align: center;
-    background-color: #323537;
-    padding: 8px;
+    color:#544b2e;
 }
 
 .terminal
 {
+    color: #746c48;
+    background-color:#170f0d;
+
     box-shadow: 3px 3px 1px rgba(0,0,0,0.6);
     align: center;
-    background-color:#1e1e1e;
-    color: #a7a7a7;
     padding:14px;
     display:block;
     width: 100%;
+
     /*gaps ;) */
     margin: 14px 14px 14px 14px;
 
@@ -85,17 +72,6 @@ a:hover
     border: 4px solid rgba(216,216,216,0.5);
 }
 
-
-.border_focused
-{
-    border: 5px solid #5f5a60;
-}
-
-.header-link
-{
-  font-size: 16pt;
-}
-
 pre
 {
   margin:0px;
@@ -113,11 +89,6 @@ body
     font-size: 12px;
 }
 
-.title
-{
-    font-size:14pt;
-}
-
 li
 {
     font-size: 12px;
@@ -125,12 +96,7 @@ li
 }
 
 /* for tweets */
-img
-{
-  display:none;
-}
-
-span[data-scribe="element:name"]
+img,span[data-scribe="element:name"]
 {
   display:none;
 }
@@ -145,12 +111,7 @@ span[data-scribe="element:screen_name"]::before
   content: "<";
 }
 
-.tweet
-{
-  margin:0px;
-}
-
-#tweets ul
+#tweets ul, #tweets > ul > p, .tweet
 {
   margin: 0px;
   padding: 0px;
@@ -166,11 +127,4 @@ span[data-scribe="element:screen_name"]::before
   display:block;
   float:left;
 }
-
-#tweets > ul > p
-{
-  margin: 0px;
-  padding: 0px;
-}
-
 
