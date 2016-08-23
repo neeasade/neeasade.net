@@ -1,61 +1,56 @@
 a {
-    color:#e9e9e9;
-    text-decoration:none;
+    color: inherit;
+    text-decoration: none;
+
+    background-image: linear-gradient(to top,
+      rgba(0,0,0,0) 11%,
+      rgba(0,0,0,.3) 11%,
+      rgba(0,0,0,.3) 16%,
+      rgba(0,0,0,0) 16%
+    );
 }
 
 a:hover {
-    color: #1e1e1e;
-    background-color: #e9e9e9;
-}
-
-.terminal {
-    position: relative;
-    top: 35%;
-
-    color: #a7a7a7;
-    background-color: #1e1e1e;
-
-    box-shadow: 5px 5px 1px rgba(0,0,0,0.4);
-    align: center;
-    padding:14px;
-    display:block;
-
-    width: 450px;
-    min-height: 200px;
-
-    margin: auto;
-
-    /* Transparent border */
-    border: 4px solid rgba(46,46,46,0.5);
-    -moz-background-clip: padding;     /* Firefox 3.6 */
-    -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
-    background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
-}
-
-.terminal:hover {
-    border: 4px solid rgba(216,216,216,0.5);
-}
-
-pre {
-  margin:0px;
-  display: inline;
-  line-height:1.2;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-
-    min-width: 100%;
-    width: 100%;
-    max-width: 100%;
-
-    min-height: 100%;
-    height: 100%;
-    max-height: 100%;
+  color: rgba(0,0,0,0.6);
 }
 
 body {
     background-image: url(background.png);
 }
 
+.terminal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    color: rgba(0,0,0,0.8);
+    background-color: #f4f5f6;
+    border: 4px solid #eeeff0;
+
+    font-family: "Droid Sans Mono", "Lucida Console", Monaco, monospace;
+    font-size: 1em;
+
+    padding: 10px;
+    display: block;
+
+    width: 80%;
+    height: 60%;
+
+    /* todo: figure out how to scale things */
+    max-height: 200px;
+    max-width: 450px;
+}
+
+.links {
+    text-align: center;
+
+    position: relative;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
