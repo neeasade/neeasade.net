@@ -1,4 +1,4 @@
-/* note: this is also referenced by blog site. */
+/* note: this is also referenced by other sites. */
 
 a {
     color: inherit;
@@ -34,36 +34,4 @@ body {
     margin: 10px 0px 10px 0px;
     display: block;
     width: auto;
-}
-
-.center {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-
-    width: 80%;
-    height: 60%;
-
-    /* todo: figure out how to scale things */
-    max-height: 200px;
-    max-width: 450px;
-}
-
-.flagtext {
-    font-family: 'Roboto';
-}
-
-.links {
-    text-align: center;
-    font-family: 'Open Sans';
-
-    position: relative;
-    top: 36%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
