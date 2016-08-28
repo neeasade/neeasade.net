@@ -47,7 +47,6 @@ body {
     font-family: "Lucida Console", Monaco, monospace;
     background-color: #f4f5f6;
     color: inherit;
-    text-align: center;
 }
 
 .highlight .lineno, .linenumbers {
