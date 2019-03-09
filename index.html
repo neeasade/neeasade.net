@@ -42,8 +42,12 @@
 	  -ms-transform: translate(-50%, -50%);
       }
 
-      .terminal {
-	  -webkit-animation: rotation 25s infinite linear;
+      .rotate {
+	  -webkit-animation: rotation 26s infinite linear;
+      }
+
+      .rotate2 {
+	  -webkit-animation: rotation2 13s infinite linear;
       }
 
       a {
@@ -59,11 +63,37 @@
 	      -webkit-transform: rotate(359deg);
 	  }
       }
+
+      pre {
+	  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", 
+		       "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", 
+		       "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+      }
+
+      @-webkit-keyframes rotation2 {
+	  from {
+	      -webkit-transform: rotate(179deg);
+	  }
+	  to {
+	      -webkit-transform: rotate(0deg);
+	  }
+      }
     </style>
   </head>
 
   <body>
-    <div class="terminal center">
+    <div class="terminal center rotate2">
+<pre>
+      ___
+     (.. \
+     (<> |
+    //  \ \
+   ( |  | /|
+  _/\ __)/_)
+  \/-____\/
+</pre>
+    </div>
+    <div class="terminal center rotate">
       <span class="flagtext">% Neeasade </span>
       <div class="links">
 	<a href="https://twitter.com/neeasade">thoughts</a>
