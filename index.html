@@ -2,17 +2,74 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title> neeasade.net </title>
-    <link href="http://notes.neeasade.net/assets/css/neeasade.net.css" rel="stylesheet">
+    <style>
+      body {
+	  background-image: url("pattern_125.gif");
+	  background-repeat: repeat;
+      }
+      .center {
+	  position: fixed;
+	  top: 35%;
+	  left: 35%;
+	  transform: translate(-50%, -50%);
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  height: 60%;
+	  max-height: 200px;
+	  max-width: 450px;
+      }
+
+      .terminal {
+	  color: #464646;
+	  background-color: #f7f7f7;
+	  /* border: 8px solid #7c7c7c; */
+	  border: 8px double rgba(124,124,124, 0.7);
+	  background-clip: padding-box;
+
+	  padding: 20px;
+	  margin: auto auto auto auto;
+	  display: block;
+	  width: 100%;
+      }
+
+      .links {
+	  text-align: center;
+	  position: relative;
+	  top: 36%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+      }
+
+      .terminal {
+	  -webkit-animation: rotation 25s infinite linear;
+      }
+
+      a {
+	  color: inherit;
+	  margin-right: 10px;
+      }
+
+      @-webkit-keyframes rotation {
+	  from {
+	      -webkit-transform: rotate(0deg);
+	  }
+	  to {
+	      -webkit-transform: rotate(359deg);
+	  }
+      }
+    </style>
   </head>
 
   <body>
     <div class="terminal center">
-      <span class="flagtext">&#62; Neeasade_</span>
+      <span class="flagtext">% Neeasade </span>
       <div class="links">
-        <a href="https://twitter.com/neeasade">thoughts</a>
-        <a href="https://notes.neeasade.net/">notes</a>
-        <a href="https://github.com/neeasade/">code</a>
-        <a href="mailto:neeasade@gmail.com">email</a>
+	<a href="https://twitter.com/neeasade">thoughts</a>
+	<a href="https://notes.neeasade.net/">notes</a>
+	<a href="https://github.com/neeasade/">code</a>
+	<a href="https://notes.neeasade.net/rice.html">rice</a>
       </div>
     </div>
   </body>
