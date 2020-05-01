@@ -4,29 +4,37 @@
     <title> neeasade.net </title>
     <style>
       body {
-	  background-image: url("pattern_125.gif");
+	  background-image: url("soft.jpg");
 	  background-repeat: repeat;
       }
+
       .center {
 	  position: fixed;
 	  top: 35%;
 	  left: 35%;
+
 	  transform: translate(-50%, -50%);
 	  -webkit-transform: translate(-50%, -50%);
 	  -ms-transform: translate(-50%, -50%);
+
 	  height: 60%;
 	  max-height: 200px;
 	  max-width: 450px;
       }
 
       .terminal {
-	  color: #464646;
-	  background-color: #f7f7f7;
-	  /* border: 8px solid #7c7c7c; */
-	  border: 8px double rgba(124,124,124, 0.7);
-	  background-clip: padding-box;
+	  /* color: #464646; */
+	  color: #5a5e65;
+	  background-color: #eef0f3;
 
-	  padding: 20px;
+	  border-style:  solid;
+	  border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABHNCSVQICAgIfAhkiAAAAGJJREFUOI1jbOta/p+ByoCFgYGBwcbGhmoGHjlyhIGJaqYhgRFuKAsuiSNHjhDUjCuCcRrKwMDAUFUWyYhLDl9SHDphOmoo9QHeJEVuCYbTUEpKrqETpkPHUBYGBuJKJFIAADHjEqIMeb/nAAAAAElFTkSuQmCC") 7 /  7px / 0 round;
+	  border-width:  7px;
+
+	  /* border: 8px double rgba(124,124,124, 0.7); */
+	  /* background-clip: padding-box; */
+
+	  padding: 10px;
 	  margin: auto auto auto auto;
 	  display: block;
 	  width: 100%;
@@ -44,10 +52,13 @@
 
       .rotate {
 	  -webkit-animation: rotation 26s infinite linear;
+	  /* top: 50%; */
+	  /* left: 50%; */
       }
 
       .rotate2 {
 	  -webkit-animation: rotation2 13s infinite linear;
+	  font-size: 0.8em;
       }
 
       a {
@@ -60,7 +71,7 @@
 	      -webkit-transform: rotate(0deg);
 	  }
 	  to {
-	      -webkit-transform: rotate(359deg);
+	      -webkit-transform: rotate(0deg);
 	  }
       }
 
@@ -83,21 +94,23 @@
 
   <body>
     <div class="terminal center rotate2">
+<!-- sourced from this page -->
+<!-- http://www.asciiworld.com/-Flowers-.html -->
 <pre>
-        .--.
-       |o_o |
-       |:_/ |
-      //   \ \
-     (|     | )
-    /'\_   _/`\                 ||     ||
-    \___)=(___/                 | M----||
-                            /\/\(       \(‾‾)
-                                ________\(oo)
-                                         v‾‾v
+
+
+               ____          ___           __----__   _/\
+            _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/
+         _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\.
+       _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./
+     ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\
+   _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/
+  <__/       ~\__\|         ^\.__./^      ~---____--~ ~\
+
 </pre>
     </div>
     <div class="terminal center rotate">
-      <span class="flagtext">% Neeasade </span>
+      <span class="flagtext">$ neeasade </span>
       <div class="links">
 	<a href="https://twitter.com/neeasade">thoughts</a>
 	<a href="https://notes.neeasade.net/">notes</a>
