@@ -52,12 +52,20 @@
 
       .rotate {
 	  -webkit-animation: rotation 26s infinite linear;
-	  /* top: 50%; */
-	  /* left: 50%; */
       }
 
       .rotate2 {
 	  -webkit-animation: rotation2 13s infinite linear;
+	  font-size: 0.8em;
+      }
+
+      .rotate3 {
+	  -webkit-animation: rotation3 7s infinite linear;
+	  font-size: 0.8em;
+      }
+
+      .rotate4 {
+	  -webkit-animation: rotation4 4s infinite linear;
 	  font-size: 0.8em;
       }
 
@@ -67,12 +75,8 @@
       }
 
       @-webkit-keyframes rotation {
-	  from {
-	      -webkit-transform: rotate(0deg);
-	  }
-	  to {
-	      -webkit-transform: rotate(0deg);
-	  }
+	  from {-webkit-transform: rotate(0deg);}
+	  to {-webkit-transform: rotate(0deg);}
       }
 
       pre {
@@ -82,20 +86,29 @@
       }
 
       @-webkit-keyframes rotation2 {
-	  from {
-	      -webkit-transform: rotate(359deg);
-	  }
-	  to {
-	      -webkit-transform: rotate(0deg);
-	  }
+	  from {-webkit-transform: rotate(359deg);}
+	  to {-webkit-transform: rotate(0deg);}
       }
+
+      @-webkit-keyframes rotation3 {
+	  from {-webkit-transform: rotate(359deg);}
+	  to {-webkit-transform: rotate(0deg);}
+      }
+
+      @-webkit-keyframes rotation4 {
+	  from {-webkit-transform: rotate(359deg);}
+	  to {-webkit-transform: rotate(0deg);}
+      }
+
     </style>
   </head>
 
-  <body>
-    <div class="terminal center rotate2">
-<!-- sourced from this page -->
+<!-- flower sourced from this page -->
 <!-- http://www.asciiworld.com/-Flowers-.html -->
+
+  <body>
+
+    <div class="terminal center rotate2">
 <pre>
 
 
@@ -109,6 +122,37 @@
 
 </pre>
     </div>
+
+    <div class="terminal center rotate3">
+<pre>
+
+
+               ____          ___           __----__   _/\
+            _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/
+         _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\.
+       _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./
+     ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\
+   _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/
+  <__/       ~\__\|         ^\.__./^      ~---____--~ ~\
+
+</pre>
+    </div>
+
+    <div class="terminal center rotate4">
+<pre>
+
+
+               ____          ___           __----__   _/\
+            _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/
+         _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\.
+       _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./
+     ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\
+   _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/
+  <__/       ~\__\|         ^\.__./^      ~---____--~ ~\
+
+</pre>
+    </div>
+
     <div class="terminal center rotate">
       <code style="font-size: 18px">$ neeasade </code>
       <div class="links">
