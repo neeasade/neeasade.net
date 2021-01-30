@@ -1,16 +1,32 @@
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UT-8">
     <title> neeasade.net </title>
     <link rel="stylesheet" href="https://notes.neeasade.net/assets/css/colors.css">
     <link rel="stylesheet" href="https://notes.neeasade.net/assets/css/notes.css">
     <link rel="stylesheet" href="https://notes.neeasade.net/assets/css/new.css">
-
     <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
+
     <style>
-      pre {
-	  background: var(--background);
-	  border: none;
+      a {
+	  margin: 5px 3px 0px 0px;
+	  display: inline-block;
+      }
+
+      .rose {
+      }
+
+      .rose {
+	  background: var(--background_weak);
+	  foreground: var(--foreground_weak);
+      }
+
+      .rose2 {
+      }
+
+      .rose2 {
+	  background: var(--background_strong);
+	  foreground: var(--foreground_strong);
       }
 
       .center {
@@ -21,16 +37,18 @@
 	  transform: translate(-50%, -50%);
 	  -webkit-transform: translate(-50%, -50%);
 	  -ms-transform: translate(-50%, -50%);
+      }
 
+      .prompt {
+	  top: 0;
+	  left: 0;
+	  font-family: var(--nc-font-mono);
       }
 
       .terminal {
-	  font-family: var(--nc-font-mono);
-	  background: var(--background);
+	  /* font-family: var(--nc-font-mono); */
 
 	  border:  solid 1px var(--background__);
-	  /* border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAABHNCSVQICAgIfAhkiAAAAGJJREFUOI1jbOta/p+ByoCFgYGBwcbGhmoGHjlyhIGJaqYhgRFuKAsuiSNHjhDUjCuCcRrKwMDAUFUWyYhLDl9SHDphOmoo9QHeJEVuCYbTUEpKrqETpkPHUBYGBuJKJFIAADHjEqIMeb/nAAAAAElFTkSuQmCC") 7 /  7px / 0 round; */
-	  /* border-width:  7px; */
 
 	  padding: 10px;
 	  margin: auto auto auto auto;
@@ -41,73 +59,53 @@
       }
 
       .right {
-	  position: absolute;
-	  top: 32%;
-	  left: 35%;
-      }
-
-      .right2 {
-	  position: absolute;
-	  top: 20%;
-	  right: 6%;
+	  display: inline-block;
 	  border-radius: 50%;
-	  /* background: radial-gradient(farthest-corner, var(--background_weak), var(--background), var(--background_strong)); */
 	  background: radial-gradient(farthest-corner, var(--background_weak), var(--background), var(--faded));
 	  height: 140px;
 	  width: 140px;
       }
 
+      .right:hover {
+	  background: radial-gradient(farthest-corner, var(--background_weak), var(--background_plus), var(--faded));
+      }
+
+      .left:hover {
+	  background: radial-gradient(farthest-corner, var(--background_strong), var(--background_plus), var(--foreground));
+      }
+
+      .middle {
+	  top: 10px;
+	  display: inline-block;
+      }
+
       .left {
-	  position: absolute;
-	  top: 20%;
-	  left: 8%;
+	  margin-top: 10px;
+	  display: inline-block;
 	  border-radius: 50%;
-	  /* background: radial-gradient(farthest-corner, var(--alt), var(--assumed), var(--primary)); */
 	  background: radial-gradient(farthest-corner, var(--background_strong), var(--background), var(--foreground));
 	  height: 140px;
 	  width: 140px;
       }
 
       .links {
-	  margin-top: 0.5rem;
+	  width: 100%;
 	  text-align: center;
-	  position: relative;
-	  top: 15%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-	  -webkit-transform: translate(-50%, -50%);
-	  -ms-transform: translate(-50%, -50%);
       }
 
-      .rotate {
-	  -webkit-animation: rotation 26s infinite linear;
-      }
+      .rotate2 {-webkit-animation: rotation2 64s infinite linear;}
+      .rotate3 {-webkit-animation: rotation2 32s infinite linear;}
+      .rotate4 {-webkit-animation: rotation2 16s infinite linear;}
+      .rotate5 {-webkit-animation: rotation2 8s infinite linear;}
 
-      .rotate2 {
-	  -webkit-animation: rotation2 64s infinite linear;
-	  font-size: 0.8em;
-      }
+      .main {
 
-      .rotate3 {
-	  -webkit-animation: rotation2 32s infinite linear;
-	  font-size: 0.8em;
-      }
+	  background: var(--background);
+	  -webkit-animation: still_rotation 26s infinite linear;
+	  text-align:center;
+	    }
 
-      .rotate4 {
-	  -webkit-animation: rotation2 16s infinite linear;
-	  font-size: 0.8em;
-      }
-
-      .rotate5 {
-	  -webkit-animation: rotation2 8s infinite linear;
-	  font-size: 0.8em;
-      }
-
-      a {
-	  /* margin: 5px; */
-      }
-
-      @-webkit-keyframes rotation {
+      @-webkit-keyframes still_rotation {
 	  from {-webkit-transform: rotate(0deg);}
 	  to {-webkit-transform: rotate(0deg);}
       }
@@ -116,95 +114,60 @@
 	  from {-webkit-transform: rotate(359deg);}
 	  to {-webkit-transform: rotate(0deg);}
       }
-
-      </style>
+    </style>
   </head>
 
-<!-- flower sourced from this page -->
-<!-- http://www.asciiworld.com/-Flowers-.html -->
-
+  <!-- flower sourced from this page -->
+  <!-- http://www.asciiworld.com/-Flowers-.html -->
   <body data-instant-allow-external-links>
-
-    <div class="terminal center rotate2">
-<pre>
-             ____          ___           __----__   _/\
+    <div class="terminal center rotate4 rose2">
+      <pre class="rose2">
+	     ____          ___           __----__   _/\
           _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/
        _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\.
      _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./
    ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\
  _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/
 <__/       ~\__\|         ^\.__./^      ~---____--~ ~\
-</pre>
+	   </pre>
     </div>
 
-<!--     <div class="terminal center rotate3"> -->
-<!-- <pre> -->
-<!--              ____          ___           __----__   _/\ -->
-<!--           _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/ -->
-<!--        _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\. -->
-<!--      _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./ -->
-<!--    ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\ -->
-<!--  _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/ -->
-<!-- <__/       ~\__\|         ^\.__./^      ~---____--~ ~\ -->
-<!-- </pre> -->
-<!--     </div> -->
-
-    <div class="terminal center rotate4">
-<pre>
-             ____          ___           __----__   _/\
+    <div class="terminal center rotate2 rose">
+      <pre class="rose">
+	     ____          ___           __----__   _/\
           _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/
        _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\.
      _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./
    ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\
  _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/
 <__/       ~\__\|         ^\.__./^      ~---____--~ ~\
-</pre>
+		   </pre>
     </div>
 
-<!--     <div class="terminal center rotate5"> -->
-<!-- <pre> -->
-<!--              ____          ___           __----__   _/\ -->
-<!--           _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/ -->
-<!--        _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\. -->
-<!--      _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./ -->
-<!--    ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\ -->
-<!--  _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/ -->
-<!-- <__/       ~\__\|         ^\.__./^      ~---____--~ ~\ -->
-<!-- </pre> -->
-<!--     </div> -->
+    <div class="main terminal center">
 
-    <div id="" class="terminal center rotate">
-      <!-- <code style="font-size: 18px">$ neeasade </code> -->
-      % fetch neeasade
-
-      <!-- <img class=left src="https://avatars.githubusercontent.com/u/3747396" /> -->
       <div class=left></div>
 
-      <div class="right">
-      <div class="links">
-	<a href="https://notes.neeasade.net/">notes</a>
-	<a href="https://github.com/neeasade/">code</a>
-	<a href="https://notes.neeasade.net/rice.html">rice</a>
+      <div class=middle>
+	<div class="prompt"> neeasade‽ </div>
+	<div class="links">
+	  <a href="https://notes.neeasade.net/">notes</a>
+	  <a href="https://github.com/neeasade/">code</a>
+	  <a href="https://notes.neeasade.net/rice.html">rice</a>
+	</div>
+
+	<div class="links">
+	  <a href="https://notes.neeasade.net/projects.html">projects</a>
+	  <a href="https://emacs.sexy/">emacs</a>
+	</div>
+
+	<div class="links">
+	  <a href="http://www.paren.party/">(party)</a>
+	  <a href="https://notes.neeasade.net/contact.html">contact</a>
+	</div>
       </div>
 
-      <div class="links">
-	<a href="https://notes.neeasade.net/projects.html">projects</a>
-	<!-- <a href="https://notes.neeasade.net/about.html">about</a> -->
-	<a href="https://emacs.sexy/">emacs</a>
-      </div>
-
-      <div class="links">
-	<a href="http://www.paren.party/">(party)</a>
-	<a href="https://notes.neeasade.net/contact.html">contact</a>
-      </div>
-      </div>
-
-      <!-- <div class="links"> -->
-      <!-- 	<a href="https://notes.neeasade.net/colors.html">colors</a> -->
-      <!-- </div> -->
-
-      <div class="right2">
-    </div>
+      <div class=right> </div>
 
   </body>
 </html>
