@@ -8,60 +8,41 @@
     <script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
 
     <style>
+      .links {
+	  text-align: center;
+      }
+
       a {
 	  margin: 5px 3px 0px 0px;
 	  display: inline-block;
       }
 
-      .rose {
-      }
-
-      .rose {
-	  background: var(--background_weak);
-	  foreground: var(--foreground_weak);
-      }
-
-      .rose2 {
-      }
-
-      .rose2 {
-	  background: var(--background_strong);
-	  foreground: var(--foreground_strong);
-      }
-
-      .center {
-	  position: fixed;
-	  top: 35%;
-	  left: 35%;
-
-	  transform: translate(-50%, -50%);
-	  -webkit-transform: translate(-50%, -50%);
-	  -ms-transform: translate(-50%, -50%);
-      }
-
-      .prompt {
-	  top: 0;
-	  left: 0;
-	  font-family: var(--nc-font-mono);
+      pre {
+	  line-height: 1.2 !important;
+	  width: 100%;
+	  padding: 0px;
+	  margin-bottom: 0 !important;
+	  border: none !important;
       }
 
       .terminal {
-	  /* font-family: var(--nc-font-mono); */
-
-	  border:  solid 1px var(--background__);
+      width: min-content;
+	  background: var(--background);
+	  font-family: var(--nc-font-mono);
 
 	  padding: 10px;
-	  margin: auto auto auto auto;
 	  display: block;
 
-	  height: 240px;
-	  width: 540px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+	transform: translate(-50%, -50%);
       }
 
       .right {
+	  background: radial-gradient(farthest-corner, var(--background_weak), var(--background), var(--faded));
 	  display: inline-block;
 	  border-radius: 50%;
-	  background: radial-gradient(farthest-corner, var(--background_weak), var(--background), var(--faded));
 	  height: 140px;
 	  width: 140px;
       }
@@ -74,11 +55,6 @@
 	  background: radial-gradient(farthest-corner, var(--background_strong), var(--background_plus), var(--foreground));
       }
 
-      .middle {
-	  top: 10px;
-	  display: inline-block;
-      }
-
       .left {
 	  margin-top: 10px;
 	  display: inline-block;
@@ -88,86 +64,36 @@
 	  width: 140px;
       }
 
-      .links {
-	  width: 100%;
-	  text-align: center;
-      }
-
-      .rotate2 {-webkit-animation: rotation2 64s infinite linear;}
-      .rotate3 {-webkit-animation: rotation2 32s infinite linear;}
-      .rotate4 {-webkit-animation: rotation2 16s infinite linear;}
-      .rotate5 {-webkit-animation: rotation2 8s infinite linear;}
-
-      .main {
-
-	  background: var(--background);
-	  -webkit-animation: still_rotation 26s infinite linear;
-	  text-align:center;
-	    }
-
-      @-webkit-keyframes still_rotation {
-	  from {-webkit-transform: rotate(0deg);}
-	  to {-webkit-transform: rotate(0deg);}
-      }
-
-      @-webkit-keyframes rotation2 {
-	  from {-webkit-transform: rotate(359deg);}
-	  to {-webkit-transform: rotate(0deg);}
+      .broider {
+	  border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAAAB2SURBVDhP7VQxDgAhCNP/P1rDgFaOXh1cTHTCmDalVGqZp0FdoVblB+dge0CieGfEKc6IGAEqYKRZR02R/tlAxShS5SdVasDjnrqa49NHtbuTRzGLjVmMHunyu1Ss3K5h272eeqtvS9GVGH9STIdcfSpOl2+pDkSnSBANot45AAAAAElFTkSuQmCC") 7 /  7px / 0 round;
+	  border-width:  7px;
+	  border-style:  solid;
       }
     </style>
   </head>
 
-  <!-- flower sourced from this page -->
-  <!-- http://www.asciiworld.com/-Flowers-.html -->
   <body data-instant-allow-external-links>
-    <div class="terminal center rotate4 rose2">
-      <pre class="rose2">
-	     ____          ___           __----__   _/\
-          _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/
-       _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\.
-     _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./
-   ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\
- _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/
-<__/       ~\__\|         ^\.__./^      ~---____--~ ~\
-	   </pre>
-    </div>
+    <div class="broider main terminal center">
+    <pre>
+$ cowsay -f bud-frogs <<< $USER
+╭───────────╮
+│ neeasade‽ │
+╰───────────╯
+     \
+      \					     
+          oO)-.                       .-(Oo
+         /__  _\                     /_  __\	   
+         \  \(  |     ()~()         |  )/  /
+          \__|\ |    (-___-)        | /|__/
+          '  '--'    ==`-'==        '--'  '
 
-    <div class="terminal center rotate2 rose">
-      <pre class="rose">
-	     ____          ___           __----__   _/\
-          _/^ __ ^\_    /~^_/ |       )/^        ^-^ _/
-       _/^ _/^  ^\_ ^\ | ./  /~      /(            _/\.
-     _/^_/^--_     ^\_^\-__-~      _/( \         _/  ./
-   ./^_/|  \_ ~\      \_^\_      /^ _(  ~-_    _/ \./\
- _/^_/   \_  ~\ \      ^\__^\../^_/^ )\    ~~~~    _\/
-<__/       ~\__\|         ^\.__./^      ~---____--~ ~\
-		   </pre>
-    </div>
-
-    <div class="main terminal center">
-
-      <div class=left></div>
-
-      <div class=middle>
-	<div class="prompt"> neeasade‽ </div>
-	<div class="links">
-	  <a href="https://notes.neeasade.net/">notes</a>
-	  <a href="https://github.com/neeasade/">code</a>
-	  <a href="https://notes.neeasade.net/rice.html">rice</a>
-	</div>
-
-	<div class="links">
-	  <a href="https://notes.neeasade.net/projects.html">projects</a>
-	  <a href="https://emacs.sexy/">emacs</a>
-	</div>
-
-	<div class="links">
-	  <a href="http://www.paren.party/">(party)</a>
-	  <a href="https://notes.neeasade.net/contact.html">contact</a>
-	</div>
-      </div>
-
-      <div class=right> </div>
-
+$ echo */</pre>
+    <div class=links>
+	  <a href="https://notes.neeasade.net/">notes/</a>
+	  <a href="https://github.com/neeasade/">code/</a>
+	  <a href="https://notes.neeasade.net/rice.html">rice/</a>
+	  <a href="https://emacs.sexy/">emacs/</a>
+	  <a href="https://notes.neeasade.net/contact.html">contact/</a>
+	  </div>
   </body>
 </html>
